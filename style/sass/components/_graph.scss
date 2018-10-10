@@ -1,0 +1,105 @@
+.line-chart-graph {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.select-graph {
+    width: 100%;
+}
+
+.graph-generate-button {
+    margin: 1rem 0 3rem 0;
+}
+
+/******************************************
+   RECORD GRAPH
+******************************************/
+
+.graph-box {
+    background-color: #fff;
+    box-shadow: var(--shadow-light);
+    padding: 3rem;
+
+   // margin: 0 21.5%; //If I don't have this, we have huge empty box on the right side... maybe because of redux-form bundle.css..
+
+    margin: 0 15%;
+
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (max-width: 970px)  { 
+       margin: 0;
+       padding: 0;
+   }
+   @media only screen and (max-width: 400px)  { 
+    margin: 0;
+    padding: 0;
+}
+}
+
+.graph-box div {
+    margin: 0 auto;
+}
+
+.graph-box div svg,
+.graph-box div svg g {
+    
+    width: 540px;
+    height: 540px;
+    border: none;
+
+    @media only screen and (max-width: 740px)  { 
+        width: 480px;
+        height: 480px;
+   }
+   @media only screen and (max-width: 400px)  { 
+    width: 315px;
+    height: 315px;
+}
+
+}
+
+.graph-line-chart {
+    align-self: center;
+}
+
+
+/******************************************
+   INSPIRATION RECORD GRAPH
+******************************************/
+
+
+.inspiration-graph-box {
+   
+
+    display: flex;
+    flex-direction: column;
+}
+
+.inspiration-graph-box div {
+    margin: 0 auto;
+}
+
+.inspiration-graph-box div svg,
+.inspiration-graph-box div svg g {
+    
+    width: 580px;
+    height: 580px;
+    border: none;
+
+    @media only screen and (max-width: 740px)  { 
+        width: 480px;
+        height: 480px;
+   }
+   @media only screen and (max-width: 400px)  { 
+    width: 315px;
+    height: 315px;
+}
+}
+
+.inspiration-graph-line-chart {
+    align-self: center;
+}
+
+

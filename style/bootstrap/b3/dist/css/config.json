@@ -1,0 +1,8 @@
+{
+  "vars": {},
+  "css": [
+    "pagination.less"
+  ],
+  "js": [],
+  "customizerUrl": "https://getbootstrap.com/docs/3.3/customize/?id=0505111de645d41bfc7a636d297fe511"
+}

@@ -1,0 +1,20 @@
+
+
+.welcome {
+    height: 75vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-grey-dark, 0.4),
+        rgba($color-grey-dark-3, 0.5)),
+//     url(../img/passion-led-us-here.jpg);
+      url(../img/let-your-dream.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    border-left: solid;
+    border-bottom: solid;
+    border-left-color: var(--color-primary);
+    border-bottom-color: var(--color-primary);
+    
+}

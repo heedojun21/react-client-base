@@ -1,0 +1,21 @@
+
+
+
+/***********************************
+    NOTE LIST
+******************************/
+
+
+.note-report-editor-wrap .rdw-editor-toolbar {
+    display: none !important;  /* View only so editor should not be displayed nor take place */
+}
+
+.note-report-editor-wrap .rdw-editor-main {
+    margin-top: 10px;
+}
+
+.note-report-editor-wrap {
+    border-top: solid;
+    border-top-width: 10px;
+    border-top-color: linear-gradient( to right , var(--color-grey-dark-1) , var(--color-grey-dark-3));
+}

@@ -1,0 +1,61 @@
+
+/*********************************
+      CAROUSEL
+***********************************/
+
+.media-report-block {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.carousel video {
+    margin: 1rem auto !important;  // 기본이 0으로 되어있어서 가운데로 안모임... 
+}
+
+.carousel.carousel-slider {
+    width: 80%;
+    padding: 0 !important;  // 상자 모양의 얇은 border 없애주기. 
+  
+}
+
+.control-arrow {
+    padding: .2rem !important; // 양쪽 arrow padding 줄이기. 
+}
+
+/*********************************
+      CAROUSEL
+***********************************/
+
+
+.media-show {
+
+    &--img{
+        width: 400px;
+        height: 600px;
+    }
+
+    &--video {
+        width: 475px;
+        height: 475px;
+        margin: 10rem auto;
+    }
+}
+
+/***************************
+    RESPONSIVE
+***************************/
+
+video {
+    
+    @media only screen and (max-width: 450px)  { 
+        width: 100% !important;
+       // height: auto !important;
+   }
+}
+
+
+.carousel video  { //slider 랑 video 재생 버튼이랑 겹쳐서 재생누를때 계속 슬라이드가 넘어감. 
+    padding: 0 2rem !important;
+}

@@ -1,0 +1,179 @@
+/*
+    POMEGRANTE COLOR: #c0392b
+    255 DARKER POMEGRANTE COLOR: #a43125
+
+    GRAY BACKGROUND COLOR: #f4f4f4
+*/
+
+:root {
+    --color-primary: #d60054; //#d60054  c0392b   first: new color, second: old color
+    --color-primary-light: #f80061; //#f80061  d3483a
+    --color-primary-dark: #b40047; //#b40047  a43125
+
+    --color-grey-light-1: #faf9f9;
+    --color-grey-light-2: #f4f2f2;
+    --color-grey-light-3: #f0eeee;
+    --color-grey-light-4: #ccc;
+    
+    --color-grey-dark-1: #0a0004; //0a0004 333 first: new color, second: old color
+    --color-grey-dark-2: #777;
+    --color-grey-dark-3: #999;
+
+    --color-surprise-1: #2980b9;
+    --color-surprise-2: #236d9d;
+    --color-surprise-3: #1d5a81;
+
+    --color-orange: #e67e22;
+    --color-yellow: #f1c40f;
+    --color-green: #2ecc71;
+    --color-blue: #3498db;
+    --color-navy: #34495e;
+    --color-purple: #8e44ad;
+
+
+
+
+    --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+    --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+
+    --line: 1px solid var(--color-grey-light-2);
+}
+
+
+
+$bp-largest: 75em;     // 1200px
+$bp-large: 68.75em;    // 1100px
+$bp-medium: 56.25em;   // 900px
+$bp-small: 37.5em;     // 600px
+$bp-smallest: 31.25em; // 500px
+
+$color-primary: #d60054;  //#d60054  c0392b
+$color-primary-light: #f80061; //#f80061  d3483a
+$color-primary-dark: #b40047;  //#b40047  a43125
+
+
+$color-white: #fff;
+$color-black: #000;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #0a0004; //0a0004 333 first: new color, second: old color
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+
+    @media only screen and (max-width: 970px)  { //970px
+        font-size: 50%; // 1rem = 8px, 8px/16px = 50%
+   }
+
+   @media only screen and (max-width: 460px)  { //970px
+    font-size: 43%; // 1rem = 7px, 7px/16px = 43%
+}
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-grey-dark-2);
+  
+
+
+
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+
+}
+
+/*      linear-gradient(72deg, var(--color-grey-dark-1) 24.52%,  transparent 24.52%),
+  background-image */
+
+/****************************************
+    FORM BOX WIDTH
+
+*****************************************/
+
+form>div>div {
+    max-width: 800px !important; // 무엇 때문인지 500px으로 고정되어 있었음.
+        @media only screen and (max-width: 970px)  { 
+            flex-flow: column !important; //무엇때문인지 column-reverse로 고정되어 있었음. 
+        }
+} 
+
+form ul li > div {
+    //flex-flow: column nowrap !important; //default is row nowrap. 
+}
+
+.slide > div {
+    flex-flow: column nowrap !important; // default is form ul li > div { flex-flow: row nowrap } 
+}
+
+//auto task list too long if it doesn't set max-heigth.
+.autoTaskListSlider .carousel {  //created .autoTaskListSlider not to effect on image/video report
+    max-height: 300px;
+}
+
+form>div>div>*:not(input):not(img):not(video):not(select):not(.input-box):not(.wrapper-class):not(.rdw-editor-main):not(textarea){
+    border: none !important;  //form>div>div>* 에 border가 지정되어 있는데, 지우면 inputbox가 없어지니. input box제외하고 border 없애주기.
+}
+
+select {
+    padding: .2rem !important; //글씨 제대로 보이더록 전체 select padding 줌.
+}
+
+
+
+form > div > div > * { // form > div > div > * 가 font-size 16px로 고정되어 있었음
+
+    padding: 0; // default padding: 5px 8px;
+
+    @media only screen and (max-width: 970px)  { 
+        font-size: 1.8rem !important; 
+    }
+
+    @media only screen and (max-width: 460px)  { 
+        font-size: 2.1rem !important;  
+    }
+} 
+
+form * { // form > div > div > * 가 font-size 16px로 고정되어 있었음
+
+    @media only screen and (max-width: 970px)  { 
+        font-size: 1.8rem !important; 
+    }
+
+    @media only screen and (max-width: 460px)  { 
+        font-size: 2.1rem !important;  
+    }
+} 
+
+
+
+table * {
+    @media only screen and (max-width: 970px)  { 
+        font-size: 1.6rem !important; 
+    }
+
+    @media only screen and (max-width: 460px)  { 
+        font-size: 1.5rem !important;
+    }
+}

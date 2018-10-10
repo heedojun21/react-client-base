@@ -1,0 +1,984 @@
+
+/***********************************
+         NORMAL BUTTON
+******************************/
+
+
+.sass-btn {
+
+    @media only screen and (max-width: 970px)  { 
+        margin-top: 1.5rem; 
+   }
+
+
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        //padding: 1.5rem 4rem;
+        padding: .6rem;
+
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        font-size: $default-font-size;
+
+        //Change for the <button> element
+        border: none;
+        cursor: pointer;
+
+
+    }
+    
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-black,.2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+    }
+    
+    &--white {
+        background-color: $color-white;
+        color: $color-primary;
+
+        &::after {
+            background-color: $color-white;
+        }
+    }
+
+    &--red {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-primary;
+        }
+    }
+    
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+    
+    &--animated {
+        animation: moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+
+}
+
+.sass-btn-text {
+    &:link,
+    &:visited {
+        font-size: $default-font-size;
+        color: $color-primary;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid $color-primary;
+        padding: 3px;
+        transition: all .2s;
+    }
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+        transform: translateY(0);
+    }
+}
+
+/***********************************
+         LONG BUTTON
+******************************/
+
+
+.long-btn {
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        //padding: 1.5rem 4rem;
+        padding: .6rem;
+        background-color: var(--color-blue);
+        color: #fff;
+        
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        font-size: $default-font-size;
+
+        //Change for the <button> element
+        border: none;
+        cursor: pointer;
+
+
+    }
+    
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-black,.2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+    }
+    
+    &--white {
+        background-color: $color-white;
+        color: $color-primary;
+
+        &::after {
+            background-color: $color-white;
+        }
+    }
+
+    &--red {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-primary;
+        }
+    }
+    
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+    
+    &--animated {
+        animation: moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+}
+
+/***********************************
+         SURPRISE BUTTON
+******************************/
+
+
+.surprise-btn {
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        //padding: 1.5rem 4rem;
+        padding: .7rem;
+        background-color: var(--color-surprise-1);
+        color: #fff;
+
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        font-size: $default-font-size;
+
+        //Change for the <button> element
+        border: none;
+        cursor: pointer;
+
+
+    }
+    
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-black,.2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+    }
+    
+    &--white {
+        background-color: $color-white;
+        color: $color-primary;
+
+        &::after {
+            background-color: $color-white;
+        }
+    }
+
+    &--red {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-primary;
+        }
+    }
+    
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+    
+    &--animated {
+        animation: moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+}
+
+
+
+/***********************************
+         SAVE BUTTON
+******************************/
+
+.save-btn {
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        //padding: 1.5rem 4rem;
+        padding: 1rem;
+        //margin: 5rem;
+        margin: 1rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: fixed;
+ 
+        font-size: $default-font-size;
+
+        //Change for the <button> element
+        border: none;
+        cursor: pointer;
+    }
+    
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-black,.2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+    }
+    
+    &--white {
+        background-color: $color-white;
+        color: $color-primary;
+
+        &::after {
+            background-color: $color-white;
+        }
+    }
+
+    &--red {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-primary;
+        }
+    }
+    
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+    
+    &--animated {
+        animation: moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+
+}
+
+
+/**************************************************
+save button respoonsive quer
+***************************************************/
+.save-btn-for-large-screen {
+    @media only screen and (max-width: 970px)  { 
+        display: none;
+   }
+}
+
+.save-btn-for-small-screen {
+
+    display: inline-block;
+    background-color: $color-primary;
+    color: #fff;
+    border: none;
+    padding: .6rem;
+    width: 8%;
+    margin-left: 92%;
+    border-radius: 10rem;
+    text-transform: uppercase;
+    position: fixed;
+    z-index: 10;
+
+    @media only screen and (max-width: 550px)  { 
+        width: 15%;
+        margin-left: 85%; 
+   }
+
+
+    @media only screen and (min-width: 971px)  { 
+        display: none;
+   }
+}
+
+/***********************************
+         DATE PICKER BUTTON
+******************************/
+
+form ul li>div button[type='button'] {
+    padding: 0 !important;
+}
+
+.rw-btn-calendar {
+    padding: 0 !important;
+}
+
+.rw-btn {
+    padding: 0 !important;
+}
+
+.rw-datetimepicker {
+    padding: 0 !important;
+}
+
+.rw-i-calendar {
+    position: absolute !important;
+    top: 10px;
+    left: 10px;
+}
+
+
+/***********************************
+         REPORT BUTTON
+******************************/
+
+
+.report-btn {
+        text-transform: uppercase;
+        text-decoration: none;
+        //padding: 1.5rem 4rem;
+        padding: .6rem;
+
+        
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        font-size: $default-font-size;
+
+        //Change for the <button> element
+        border: none;
+        cursor: pointer;
+
+    
+    
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-black,.2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+    }
+    
+    &--white {
+        background-color: $color-white;
+        color: $color-primary;
+
+        &::after {
+            background-color: $color-white;
+        }
+    }
+
+    &--red {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-primary;
+        }
+    }
+}
+
+/***********************************
+         STEP BUTTON
+******************************/
+
+.step-finished-date-btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: .6rem;    
+    transition: all .2s;
+    position: relative;
+    font-size: $default-font-size;
+
+    //Change for the <button> element
+    border: none;
+    cursor: pointer;
+    
+}
+
+
+/***********************************
+         GRAY SQUARE REPORT BUTTON
+******************************/
+
+.gray-btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: .6rem;    
+    transition: all .2s;
+    position: relative;
+    font-size: $default-font-size;
+
+    //Change for the <button> element
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/***********************************
+      STEP DONE BUTTON - TABLE BUTTON
+******************************/
+
+
+.done-btn {
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        //padding: 1.5rem 4rem;
+        padding: .6rem;
+
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        font-size: $default-font-size;
+
+        //Change for the <button> element
+        border: none;
+        cursor: pointer;
+    }
+    
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-black,.2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+    }
+    
+    &--blue {
+        background-color: var(--color-surprise-1);
+        color: $color-white;
+
+        &::after {
+            background-color: var(--color-surprise-1);
+        }
+    }
+
+    &--red {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-primary;
+        }
+    }
+    
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+    
+    &--animated {
+        animation: moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+
+}
+
+.done-btn-text {
+    &:link,
+    &:visited {
+        font-size: $default-font-size;
+        color: $color-primary;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid $color-primary;
+        padding: 3px;
+        transition: all .2s;
+    }
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+        transform: translateY(0);
+    }
+}
+
+/***********************************
+    STEP DONE BUTTON - FINISHED BUTTON
+******************************/
+
+.finished-btn {
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        //padding: 1.5rem 4rem;
+        padding: .6rem;
+
+        width: 30%;
+        margin: 0 auto;
+
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        font-size: $default-font-size;
+
+        //Change for the <button> element
+        border: none;
+        cursor: pointer;
+    }
+    
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-black,.2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+    }
+    
+    &--blue {
+        background-color: var(--color-surprise-1);
+        color: $color-white;
+
+        &::after {
+            background-color: var(--color-surprise-1);
+        }
+    }
+
+    &--red {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-primary;
+        }
+    }
+    
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+    
+    &--animated {
+        animation: moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+}
+
+
+
+
+/***********************************
+        MEDIA EDIT BUTTON
+******************************/
+
+
+.media-btn {
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        //padding: 1.5rem 4rem;
+        padding: 1rem !important;  // important 자주 쓰면 안되는데... 원인 찾게되면 바로 없애기.
+ 
+        margin: 2rem 2rem 2rem 0 !important; // important 자주 쓰면 안되는데... 원인 찾게되면 바로 없애기.
+
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        font-size: $default-font-size;
+
+        align-self: flex-end;
+        justify-content: flex-end;
+
+        background-color: var(--color-surprise-1);
+        color: $color-white;
+
+
+
+        //Change for the <button> element
+        border: none;
+        cursor: pointer;
+    }
+    
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-black,.2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+    }
+    
+    
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+    
+    &--animated {
+        animation: moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+
+}
+
+.media-btn-text {
+    &:link,
+    &:visited {
+        font-size: $default-font-size;
+        color: $color-primary;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid $color-primary;
+        padding: 3px;
+        transition: all .2s;
+    }
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+        transform: translateY(0);
+    }
+}
+
+
+
+
+/***********************************
+         INSPIRATION BUTTON
+******************************/
+
+
+.inspiration-btn {
+
+    @media only screen and (max-width: 700px)  { 
+        margin: 1rem 1rem;
+   }
+
+   
+
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        //padding: 1.5rem 4rem;
+        padding: .6rem;
+
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        font-size: $default-font-size;
+
+        //Change for the <button> element
+        border: none;
+        cursor: pointer;
+    }
+    
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-black,.2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+    }
+    
+    &--orange {
+        background-color: var(--color-orange);
+        color: $color-white;
+
+        &::after {
+            background-color: $color-white;
+        }
+    }
+
+    &--orange {
+        background-color: var(--color-orange);
+        color: $color-white;
+
+        &::after {
+            background-color: $color-white;
+        }
+    }
+
+    &--yellow {
+        background-color: var(--color-yellow);
+        color: $color-white;
+
+        &::after {
+            background-color: $color-white;
+        }
+    }
+
+    &--green {
+        background-color: var(--color-green);
+        color: $color-white;
+
+        &::after {
+            background-color: $color-white;
+        }
+    }
+
+    &--blue {
+        background-color: var(--color-blue);
+        color: $color-white;
+
+        &::after {
+            background-color: $color-white;
+        }
+    }
+
+
+    &--navy {
+        background-color: var(--color-navy);
+        color: $color-white;
+
+        &::after {
+            background-color: $color-white;
+        }
+    }
+
+    &--purple {
+        background-color: var(--color-purple);
+        color: $color-white;
+
+        &::after {
+            background-color: $color-white;
+        }
+    }
+
+    &--red {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-primary;
+        }
+    }
+    
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+    
+    &--animated {
+        animation: moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+
+}
+
+.inspiration-btn-text {
+    &:link,
+    &:visited {
+        font-size: $default-font-size;
+        color: $color-primary;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid $color-primary;
+        padding: 3px;
+        transition: all .2s;
+    }
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+        transform: translateY(0);
+    }
+}
+
+
+
+.search-btn {
+    flex: 0 1 100%;
+}

@@ -1,0 +1,96 @@
+/***************************************
+ WALL
+ ****************************************/
+.wall-form-box {
+   display: flex;
+   flex-direction: column;
+}
+
+.wall-form-textarea {
+    width: 100%;
+}
+
+.wall-form-button-box {
+
+    margin: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.feedBody {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedText {
+    display: flex;
+    flex-direction: row;
+}
+
+.feedDelete {
+    margin-top: 1px;
+    margin-left: 1rem;
+}
+
+.feedComment {
+    margin: 1rem;
+}
+
+ /**************************************
+ COMMENT  INPUT
+ ***************************************/
+
+
+ .feedCommentDiv {
+
+ }
+
+ .feedCommentForm {
+
+ }
+
+ .commentInput {
+    width: 55%;
+ }
+ 
+ .feedCommentButton {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 7px;
+ }
+
+
+  /**************************************
+ COMMENT  CONTENTS
+ ***************************************/
+
+ .feedCommentGrid {
+    background-color: #e3e9ef;
+    border: solid;
+    border-width: 1px; 
+    padding: 5px;
+    margin-bottom: 15px;
+ }
+
+ .feedCommentText {
+    margin: 5px;
+    padding: 5px;
+ }
+
+ .feedCommenter {
+    margin: 5px;
+    padding: 5px;
+ }
+
+ .feedCommetDelete {
+    margin-top: 1px;
+    margin-left: 1rem;
+    float: right;
+ }
+
+ .feedCommentContents {
+    margin: 5px;
+    padding: 5px;
+ }

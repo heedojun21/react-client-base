@@ -1,0 +1,19 @@
+
+.loading {
+    height: 10vh;
+    width: auto;
+    background-color: var(--color-grey-dark-2);
+    background-size: cover;
+    background-position: top;
+    
+    &_text {
+        text-align: center;
+        vertical-align: middle;
+        line-height: 10vh;
+        margin-left: 2rem;
+        color: var(--color-grey-light-2);
+    }
+    
+}
+
+

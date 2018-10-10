@@ -1,0 +1,408 @@
+.td:not(:last-of-type) {
+    margin-right: 10px;
+    padding: 10px;
+}
+
+
+/***********************************
+         DIARY SHOW TABLE
+******************************/
+
+.diary-table {
+
+
+  //  width: 100%;
+  @supports(table-layout: fixed) {
+    table-layout: fixed;
+}
+    width: 100%;
+    white-space: normal; //normal, nowrap
+    margin-top: 3rem;
+}
+
+.diary-th {
+    background-color: var(--color-grey-dark-2);
+    color: white;
+    text-transform: uppercase;
+
+    &.diary-td {
+        padding: 2rem;
+    }
+}
+
+.diary-tr {
+    &:nth-child(even) {background-color: #f2f2f2;}
+}
+.diary-td {
+    padding: 1rem;
+    @supports(white-space: nowrap) {
+        white-space: normal; //normal, nowrap
+    }
+    @supports(text-overflow: ellipsis) {
+        text-overflow: ellipsis;
+    }
+    overflow: hidden;
+
+}
+
+
+/***********************************
+  TASK LIST TABLE (MANAGEMENT)
+******************************/
+
+.task-table {
+   // width: 100%;
+   @supports(table-layout: fixed) {
+    table-layout: fixed;
+}
+    width: 100%;
+    white-space: normal; //nowrap, normal
+    margin-top: 1.5rem;
+}
+
+.task-th {
+    background-color: var(--color-surprise-1);
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+
+    &.task-td {
+        padding: 2rem;
+    }
+}
+
+.task-tr {
+    &:nth-child(even) {background-color: #f2f2f2;}
+}
+.task-td {
+    padding: 1rem;
+    @supports(white-space: nowrap) {
+        white-space: normal; // nowrap, normal
+    }
+    @supports(text-overflow: ellipsis) {
+        text-overflow: ellipsis;
+    }
+    overflow: hidden;
+
+
+    &__title {
+        width: 45%; //error... overflowing table . not good way to fix this issue .
+    }
+    &__edit {
+        width: 12%;
+    }
+    &__remove {
+        width: 12%;
+    }
+}
+
+
+
+/***********************************
+  Success Dictionary  TABLE 
+******************************/
+
+.success-table {
+    // max-width: 100%;
+     @supports(table-layout: fixed) {
+         table-layout: fixed;
+     }
+ 
+     width: 100%;
+     white-space: normal; //normal, nowrap
+ 
+     margin-top: 1.5rem;
+ }
+ 
+ .success-th {
+     background-color: var(--color-surprise-1);
+     color: white;
+     text-transform: uppercase;
+     text-align: center;
+ 
+     &.success-td {
+         padding: 2rem;
+     }
+ }
+ 
+ .success-tr {
+     &:nth-child(even) {background-color: #f2f2f2;}
+ }
+
+ .success-td {
+    padding: 1rem;
+    text-align: center;
+    @supports(white-space: nowrap) {
+        white-space: normal;  //normal , nowrap
+    }
+   
+ }
+/***********************************
+  STEP MANAGEMENT TABLE 
+******************************/
+
+.step-table {
+   // max-width: 100%;
+    @supports(table-layout: fixed) {
+        table-layout: fixed;
+    }
+
+    width: 100%;
+    white-space: normal; //normal, nowrap
+
+    margin-top: 1.5rem;
+}
+
+.step-th {
+    background-color: var(--color-surprise-1);
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+
+    &.step-td {
+        padding: 2rem;
+    }
+}
+
+.step-tr {
+    &:nth-child(even) {background-color: #f2f2f2;}
+}
+.step-td {
+    padding: 1rem;
+    text-align: center;
+    @supports(white-space: nowrap) {
+        white-space: normal; //normal , nowrap
+    }
+    @supports(text-overflow: ellipsis) {
+        text-overflow: ellipsis;
+    }
+    overflow: hidden;
+
+    /*step no daily*/
+    &__count {
+        width: 15%;
+    }
+
+    &__positive {
+        width: 54%;
+    }
+    &__show {
+        width: 15%;
+    }
+    &__edit {
+        width: 16%;   
+    }
+
+    /*step no report */
+
+    &__startNo {
+        width: 24%;
+    }
+    &__endNo {
+        width: 24%;
+    }
+    &__successNo {
+        width: 12%;
+    }
+    &__reasonNo {
+        width: 40%;
+    }
+
+
+
+/* table do daily */
+    &__diary {
+        width: 15%;
+    }
+    &__title {
+        width: 54%;
+    }
+    &__show {
+        width: 15%;
+    }
+    &__edit {
+        width: 16%;
+    }
+
+
+/* table do step report */
+
+    &__step {
+        width: 40%;
+    }
+    &__status {
+        width: 15%;
+    }
+    &__count {
+        width: 15%;
+    }
+    &__finished {
+        width: 30%;
+    }
+
+    /* table do task report */
+
+    &__task {
+        width: 60%;
+    }
+    &__number {
+        width: 20%;
+    }
+    &__unit {
+        width: 20%;
+    }
+
+
+    /* resource list daily */
+    &__category {
+        width: 25%;
+    }
+    &__resource {
+        width: 45%;
+    }
+    &__remove {
+        width: 17%;
+    }
+
+    &__editResource {
+        width: 13%;
+    }
+
+    
+    /* do motivation list daily */
+    &__goalDoMotivation {
+        width: 40%;
+        @media only screen and (max-width: 700px)  { 
+            width:60%;
+       }
+    }
+    &__diaryDoMotivation {
+        width: 10%;
+        @media only screen and (max-width: 700px)  { 
+            width:13%;
+       }
+    }
+    &__titleDoMotivation {
+        width: 35%;
+        @media only screen and (max-width: 700px)  { 
+            width:0%;
+       }
+    }
+
+    &__detailDoMotivation {
+        width: 15%;
+        @media only screen and (max-width: 700px)  { 
+            width:17%;
+       }
+    }
+
+
+        /* no motivation list daily */
+        &__goalNoMotivation {
+            width: 37%;
+            @media only screen and (max-width: 700px)  { 
+                width:60%;
+           }
+        }
+        &__countNoMotivation {
+            width: 10%;
+            @media only screen and (max-width: 700px)  { 
+                width:13%;
+           }
+        }
+        &__diaryNoMotivation {
+            width: 38%;
+            @media only screen and (max-width: 700px)  { 
+                width:0%;
+           }
+        }
+    
+    
+        &__detailNoMotivation {
+            width: 15%;
+            @media only screen and (max-width: 700px)  { 
+                width:17%;
+           }
+        }
+}
+
+
+
+/***********************************
+  INSPIRATION TABLE 
+******************************/
+
+.inspiration-table {
+    // max-width: 100%;
+     @supports(table-layout: fixed) {
+         table-layout: fixed;
+     }
+ 
+     width: 100%;
+     white-space: normal; //normal, nowrap
+     text-transform: uppercase;
+     margin-top: 1.5rem;
+    
+ }
+ 
+ .inspiration-th {
+     background-color: var(--color-surprise-1);
+     color: white;
+     text-transform: uppercase;
+     text-align: center;
+ 
+     &.inspiration-td {
+         padding: 2rem;
+     }
+ }
+ 
+ .inspiration-tr {
+     &:nth-child(even) {background-color: #f2f2f2;}
+
+     cursor: pointer;
+ }
+ .inspiration-td {
+    // padding: 1rem;
+     text-align: center;
+     @supports(white-space: nowrap) {
+         white-space: normal; //normal , nowrap
+     }
+     @supports(text-overflow: ellipsis) {
+         text-overflow: ellipsis;
+     }
+     overflow: hidden;
+ 
+     height:35rem;
+     /*inspiration list table*/
+     &__img {
+         cursor: pointer;
+         width: 31rem;
+         height: 33rem;
+         @media only screen and (max-width: 1200px)  { 
+            width: 28rem;
+            height: 28rem;
+         }
+         @media only screen and (max-width: 1100px)  { 
+            width: 25rem;
+            height: 25rem;
+         }
+         @media only screen and (max-width: 460px)  { 
+            width: 19rem;
+            height: 19rem;
+         }
+
+         @media only screen and (max-width: 300px)  { 
+            width: 16rem;
+            height: 16rem;
+         }
+     }
+ 
+     &__do_goal {
+         //width: 60%;
+         font-family: lato,'Open Sans', sans-serif;
+         border: none;
+         background: none;
+     }
+ 
+ }
+

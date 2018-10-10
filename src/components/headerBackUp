@@ -1,0 +1,63 @@
+  <ul className="user-nav small-screen-nav__list">
+                            <li className="user-nav small-screen-nav__item">
+                                <a href="#" className="small-screen-nav__link">Start <span class="toggle">Expand</span><span class="caret"></span></a>
+                                <nav>
+                                    <ul>
+                                        <li><a href="#">Articles</a></li>
+                                        <li><a href="#">Tutorials</a></li>
+                                        <li><a href="#">Humour</a></li>
+                                        <li><a href="#">Gaming</a></li>
+                                        <li><a href="#">Music</a></li>
+                                    </ul>
+                                </nav>
+                            </li>
+                            <li className="user-nav small-screen-nav__item">
+                                <a href="#" className="small-screen-nav__link">Diary <span class="toggle">Expand</span><span class="caret"></span></a>
+                                <nav>
+                                    <ul>
+                                        <li><a href="#">Articles</a></li>
+                                        <li><a href="#">Tutorials</a></li>
+                                        <li><a href="#">Humour</a></li>
+                                        <li><a href="#">Gaming</a></li>
+                                        <li><a href="#">Music</a></li>
+                                    </ul>
+                                </nav>
+                            </li>
+                            <li className="user-nav small-screen-nav__item">
+                                <a href="#" className="small-screen-nav__link">Report <span class="toggle">Expand</span><span class="caret"></span></a>
+                                <nav>
+                                    <ul>
+                                        <li><a href="#">Articles</a></li>
+                                        <li><a href="#">Tutorials</a></li>
+                                        <li><a href="#">Humour</a></li>
+                                        <li><a href="#">Gaming</a></li>
+                                        <li><a href="#">Music</a></li>
+                                    </ul>
+                                </nav>
+                            </li>
+                            <li className="user-nav small-screen-nav__item">
+                                <a href="#" className="small-screen-nav__link">Motivation <span class="toggle">Expand</span><span class="caret"></span></a>
+                                <nav>
+                                    <ul>
+                                        <li><a href="#">Articles</a></li>
+                                        <li><a href="#">Tutorials</a></li>
+                                        <li><a href="#">Humour</a></li>
+                                        <li><a href="#">Gaming</a></li>
+                                        <li><a href="#">Music</a></li>
+                                    </ul>
+                                </nav>
+                            </li>
+                            <li className="user-nav small-screen-nav__item">
+                                <a href="#" className="small-screen-nav__link">Inspiration <span class="toggle">Expand</span><span class="caret"></span></a>
+                                <nav>
+                                    <ul>
+                                        <li><a href="#">Articles</a></li>
+                                        <li><a href="#">Tutorials</a></li>
+                                        <li><a href="#">Humour</a></li>
+                                        <li><a href="#">Gaming</a></li>
+                                        <li><a href="#">Music</a></li>
+                                    </ul>
+                                </nav>
+                            </li>
+
+                        </ul>
